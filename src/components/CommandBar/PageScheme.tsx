@@ -6,14 +6,17 @@ import { useState } from 'react'
 import { SubFiles } from './SubFiles'
 
 interface openModal {
-  modalisClous?: boolean
+  modalisClous: boolean
 }
 
 export const PageScheme = ({ modalisClous }: openModal) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='flex flex-col gap-10 h-screen w-56 relative z-0 bg-indigo-50 drop-shadow-2xl border-r border-zinc-950/10 overflow-hidden'>
+    <div
+      aria-disabled={modalisClous}
+      className='flex flex-col gap-10 h-screen lg:w-80 md:w-56 md:aria-disabled:w-0 transition-all duration-700 ease-in-out lg:aria-disabled:w-0 relative  bg-indigo-50 drop-shadow-2xl overflow-hidden'
+    >
       <div className='w-full inline-flex justify-between items-center text-center px-2.5 pt-5'>
         <h3 className='font-semibold text-xl'>Projects</h3>
         <div className='bg-zinc-950 text-white h-fit w-fit rounded-full'>

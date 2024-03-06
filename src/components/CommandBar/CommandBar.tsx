@@ -5,7 +5,6 @@ export function CommandBar() {
   return (
     <>
       <BarRoot />
-      <PageScheme />
     </>
   )
 }
