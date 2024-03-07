@@ -14,7 +14,7 @@ function Flow() {
           size={1.5}
           color={zinc[200]}
         />
-        <Controls />
+        {/* <Controls className='top-0' /> */}
       </ReactFlow>
     </main>
   )
