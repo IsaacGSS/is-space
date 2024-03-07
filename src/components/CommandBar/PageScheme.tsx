@@ -15,7 +15,7 @@ export const PageScheme = ({ modalisClous }: openModal) => {
   return (
     <div
       aria-disabled={modalisClous}
-      className='flex flex-col gap-10 h-screen lg:w-80 md:w-56 md:aria-disabled:w-0 transition-all duration-700 ease-in-out lg:aria-disabled:w-0 relative  bg-indigo-50 drop-shadow-2xl overflow-hidden'
+      className='flex flex-col gap-10 h-screen lg:w-80 md:w-56 w-[100vw] aria-disabled:w-0 relative transition-all duration-700 ease-in-out bg-indigo-50 drop-shadow-2xl overflow-hidden'
     >
       <div className='w-full inline-flex justify-between items-center text-center px-2.5 pt-5'>
         <h3 className='font-semibold text-xl'>Projects</h3>
