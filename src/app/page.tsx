@@ -1,9 +1,14 @@
+'use client'
+
 import Flow from '../components/Flow/Flow'
+import { CmdContext } from '../components/CmdContext/index'
 
 export default function Home() {
   return (
     <>
-      <Flow />
+      <CmdContext>
+        <Flow />
+      </CmdContext>
     </>
   )
 }

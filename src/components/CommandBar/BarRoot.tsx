@@ -39,9 +39,8 @@ export const BarRoot = () => {
           {/* configuracao */}
           <Settings2 className='md:size-6 size-5 ' />
         </div>
-        {/* <div className=' flex flex-col justify-end items-center gap-5 pb-5 relative bottom-5'> */}
+
         <LogOut className='md:size-6 size-5 absolute bottom-5 inset-x-1/2 -translate-x-1/2' />
-        {/* </div> */}
       </header>
 
       <PageScheme modalisClous={openFiles} />

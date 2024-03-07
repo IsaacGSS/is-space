@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='pt-BR'>
       <body className={`${inter.className} ${roboto_mono} flex`}>
-        <CommandBar />
+        <CommandBar key={'sd'} />
         {children}
       </body>
     </html>
