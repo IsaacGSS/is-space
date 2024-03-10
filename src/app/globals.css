@@ -9,3 +9,9 @@
   height: 0;
   pointer-events: none;
 }
+
+.tiptap {
+  > * + * {
+    margin-top: 0.75em;
+  }
+}
