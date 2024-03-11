@@ -12,7 +12,11 @@
     "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-context-menu": "^2.1.5",
     "@reactflow/node-resizer": "^2.2.9",
+    "@tiptap/extension-bullet-list": "^2.2.4",
+    "@tiptap/extension-floating-menu": "^2.2.4",
+    "@tiptap/extension-heading": "^2.2.4",
     "@tiptap/extension-highlight": "^2.2.4",
+    "@tiptap/extension-list-item": "^2.2.4",
     "@tiptap/extension-placeholder": "^2.2.4",
     "@tiptap/extension-subscript": "^2.2.4",
     "@tiptap/extension-superscript": "^2.2.4",
@@ -29,14 +33,15 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.2",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.2"
+    "typescript": "^5"
   }
 }
