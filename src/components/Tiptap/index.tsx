@@ -66,7 +66,7 @@ export const Tiptap = () => {
     <>
       {editor && (
         <>
-          {/* <BubbleMenu
+          <BubbleMenu
             editor={editor}
             tippyOptions={{ duration: 100 }}
             className='w-full translate-x-1/2 space flex gap-2 justify-end items-center text-white'
@@ -103,31 +103,7 @@ export const Tiptap = () => {
               onClick={() => editor.chain().focus().toggleSuperscript().run()}
               className={editor.isActive('superscript') ? 'is-active' : ''}
             />
-
-          
-          </BubbleMenu>*/}
-          {/* <FloatingMenu editor={editor} tippyOptions={{ duration: 100 }}>
-            <H1Floating
-              onClick={() =>
-                editor.chain().focus().toggleHeading({ level: 1 }).run()
-              }
-              className={
-                editor.isActive('heading', { level: 1 }) ? 'is-active' : ''
-              }
-            />
-            <H2Floating
-              onClick={() =>
-                editor.chain().focus().toggleHeading({ level: 2 }).run()
-              }
-              className={
-                editor.isActive('heading', { level: 2 }) ? 'is-active' : ''
-              }
-            />
-            <BulletListFloating
-              onClick={() => editor.chain().focus().toggleBulletList().run()}
-              className={editor.isActive('bulletList') ? 'is-active' : ''}
-            />
-          </FloatingMenu> */}
+          </BubbleMenu>
 
           <FloatingMenu
             editor={editor}
