@@ -29,8 +29,7 @@ import {
 import {
   H1Floating,
   H2Floating,
-  BulletListFloating,
-  Lis2Floating
+  BulletListFloating
 } from './components/Floating'
 
 export const Tiptap = () => {
