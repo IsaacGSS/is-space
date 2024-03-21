@@ -3,6 +3,7 @@
 import {
   Files,
   LayoutGrid,
+  List,
   LogOut,
   Map,
   ScrollText,
@@ -19,7 +20,7 @@ export const BarRoot = () => {
 
   return (
     <>
-      <header className='h-screen min-w-10 max-w-10 bg-zinc-950 relative left-0 z-10 justify-between text-zinc-300'>
+      <header className='h-screen min-w-10 max-w-10 bg-zinc-950  left-0 z-10 justify-between text-zinc-300 fixed'>
         <div className='h-fit flex flex-col gap-5 items-center py-10'>
           {/* <div className='flex gap-1'>
             <div className='size-1.5 bg-zinc-100 rounded-full' />
@@ -30,23 +31,26 @@ export const BarRoot = () => {
         </div>
 
         <div className='flex flex-col justify-start items-center gap-5 pt-5 '>
-          <ButtonLink href='/notion'>
-            <ScrollText className='md:size-6 size-5 ' />
+          <ButtonLink href='/list'>
+            <List className='md:size-6 size-5 ' />
           </ButtonLink>
+          {/* <ButtonLink href='/notion'>
+            <ScrollText className='md:size-6 size-5 ' />
+          </ButtonLink> */}
           <Files
             className='md:size-6 size-5 cursor-pointer'
             onClick={() => {
               setOpenFiles(!openFiles)
             }}
           />
-          <LayoutGrid className='md:size-6 size-5 ' />
-          <ButtonLink href='/flow'>
+          {/* <LayoutGrid className='md:size-6 size-5 ' /> */}
+          {/* <ButtonLink href='/flow'>
             <Workflow className='md:size-6 size-5 ' />
-          </ButtonLink>
+          </ButtonLink> */}
           {/* configuracao */}
-          <ButtonLink href='/settings'>
+          {/* <ButtonLink href='/settings'>
             <Settings2 className='md:size-6 size-5 ' />
-          </ButtonLink>
+          </ButtonLink> */}
         </div>
 
         <LogOut className='md:size-6 size-5 absolute bottom-5 inset-x-1/2 -translate-x-1/2' />
