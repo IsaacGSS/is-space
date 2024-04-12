@@ -34,23 +34,23 @@ export const BarRoot = () => {
           <ButtonLink href='/list'>
             <List className='md:size-6 size-5 ' />
           </ButtonLink>
-          {/* <ButtonLink href='/notion'>
+           <ButtonLink href='/notion'>
             <ScrollText className='md:size-6 size-5 ' />
-          </ButtonLink> */}
+          </ButtonLink>
           <Files
             className='md:size-6 size-5 cursor-pointer'
             onClick={() => {
               setOpenFiles(!openFiles)
             }}
           />
-          {/* <LayoutGrid className='md:size-6 size-5 ' /> */}
-          {/* <ButtonLink href='/flow'>
+           <LayoutGrid className='md:size-6 size-5 ' />
+           <ButtonLink href='/flow'>
             <Workflow className='md:size-6 size-5 ' />
-          </ButtonLink> */}
-          {/* configuracao */}
-          {/* <ButtonLink href='/settings'>
+          </ButtonLink>
+           
+           <ButtonLink href='/settings'>
             <Settings2 className='md:size-6 size-5 ' />
-          </ButtonLink> */}
+          </ButtonLink>
         </div>
 
         <LogOut className='md:size-6 size-5 absolute bottom-5 inset-x-1/2 -translate-x-1/2' />
