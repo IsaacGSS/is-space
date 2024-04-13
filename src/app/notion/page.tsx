@@ -3,15 +3,15 @@ import Link from 'next/link'
 export default function NodtionTiptap() {
   return (
     <>
-      <section className='w-full h-screen p-5 flex flex-col bg-zinc-950 gap-2'>
+      <section className='w-full max-h-screen p-5 pb-10  flex flex-col bg-zinc-950 gap-2'>
         <section className='h-20 w-full text-neutral-50 inline-flex items-center'>
-          <span className='text-2xl font-inter '>Project Kabum</span>
+          <span className='text-2xl font-inter'>Project Kabum</span>
         </section>
 
-        <section className='space-y-10 p-10 bg-neutral-100 w-full h-full rounded-3xl'>
-          <div className='w-2/3 rounded-full shadow-xl drop-shadow-md shadow-zinc-950/10 h-10 border border-zinc-950'></div>
-          <section className='flex flex-wrap items-end gap-10'>
-            {Array.from({ length: 10 }).map((value, index) => (
+        <section className='h-4/5 p-10 px-0 bg-neutral-100 w-full rounded-3xl overflow-hidden'>
+          <div className='w-2/3 rounded-full shadow-xl drop-shadow-md shadow-zinc-950/10 h-10 border border-zinc-950 '></div>
+          <section className='h-full p-5 flex flex-wrap items-end gap-10 overflow-y-scroll'>
+            {Array.from({ length: 20 }).map((value, index) => (
               <Link key={index} href={'/notion/edit'}>
                 <div className='size-56 border border-zinc-900 rounded-md shadow-md shadow-black/20 overflow-hidden p-3 text-justify '>
                   <span className='text-lg font-medium capitalize'>Title</span>
